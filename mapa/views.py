@@ -32,7 +32,7 @@ def mapinha(request):
         df_ponto = df[df['latitude'] == ponto]
         #dia = df_ponto['data_analise'].unique()[-1]
         #df_ponto = df_ponto[df_ponto['data_analise'] == dia]
-        print(df_ponto)
+        #print(df_ponto)
 
         make_markers_and_add_to_map(map, df_ponto)
 
