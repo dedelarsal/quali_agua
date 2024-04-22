@@ -9,19 +9,19 @@ def make_markers_and_add_to_map(map, df):
 
             if row.parametro == 'Coliformes Totais':
                 if float(row.valor_parametro) > 0:
-                    flag = folium.Icon(icon='fa-vial-virus', prefix='fa', color='red')
+                    flag = folium.Icon(icon='vial-virus', prefix='fa', color='red')
             if row.parametro == 'E. coli':
                 if float(row.valor_parametro) > 0:
-                    flag = folium.Icon(icon='fa-vial-virus', prefix='fa', color='red')
+                    flag = folium.Icon(icon='vial-virus', prefix='fa', color='red')
             if row.parametro == 'Cloro Residual Livre (mg/L)':
                 if float(row.valor_parametro) < 0.2 or float(row.valor_parametro) > 5:
-                    flag = folium.Icon(icon='fa-vial-virus', prefix='fa', color='red')
+                    flag = folium.Icon(icon='vial-virus', prefix='fa', color='red')
             if row.parametro == 'Turbidez (uT)':
                 if float(row.valor_parametro) > 5:
-                    flag = folium.Icon(icon='fa-vial-virus', prefix='fa', color='red')
+                    flag = folium.Icon(icon='vial-virus', prefix='fa', color='red')
             if row.parametro == 'Cor Aparente (uH)':
                 if float(row.valor_parametro) > 15:
-                    flag = folium.Icon(icon='fa-vial-virus', prefix='fa', color='red')
+                    flag = folium.Icon(icon='vial-virus', prefix='fa', color='red')
 
     folium.Marker(
             location = [df.latitude.unique()[0], df.longitude.unique()[0]],
