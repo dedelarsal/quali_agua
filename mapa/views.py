@@ -11,9 +11,10 @@ import geopandas as gpd
 
 def mapinha(request):
     figure = folium.Figure()
-    blocoA = 'mapa\shp\Bloco A.shp'
-    blocoB = 'mapa\shp\Bloco B.shp'
-    blocoC = 'mapa\shp\Bloco C.shp'
+    url = '/home/Dedel/dedel.pythonanywhere.com/'
+    blocoA = url + 'mapa\shp\Bloco A.shp'
+    blocoB = url + 'mapa\shp\Bloco B.shp'
+    blocoC = url + 'mapa\shp\Bloco C.shp'
 
     #Fazendo o mapa
     map = folium.Map(
